@@ -143,9 +143,7 @@
 
 
 
-===Recommended===
-  * Great backup service with free 2Gb - <a href="http://goo.gl/UNlKw">Mozy.com</a>.
-  * Increase productivity by automated time tracking - <a href="http://goo.gl/GNLuu">RescueTime</a>.
-  * Google Chrome extension <a href="http://goo.gl/b10YF">PHP Console</a>.
-  * Google Chrome extension <a href="http://goo.gl/kNix9">JavaScript Errors Notifier</a>.
+## Recommended
+* Google Chrome extension <a href="http://goo.gl/b10YF">PHP Console</a>.
+* Google Chrome extension <a href="http://goo.gl/kNix9">JavaScript Errors Notifier</a>.
  
