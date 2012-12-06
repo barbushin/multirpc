@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @see http://code.google.com/p/multirpc
- * @author Barbushin Sergey http://www.linkedin.com/in/barbushin
+ * @see https://github.com/barbushin/multirpc
+ * @author Barbushin Sergey http://linkedin.com/in/barbushin
  */ 
 class RPC_Request {
 
