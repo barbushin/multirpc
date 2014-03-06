@@ -340,20 +340,11 @@ class RPC_RequestInitObject extends RPC_RequestCall {
 	}
 }
 
-class RPC_Exception extends Exception {
-
-}
-
 /**
  * Required because you can't catch-throw server exception, because some classes can't be not defined on client
  */
-class RPC_ServerExceptionData {
+class RPC_Exception extends Exception {
 
-	public $callName;
-	public $class;
-	public $message;
-	public $source;
-	public $trace;
 }
 
 class RPC_ServerException extends RPC_Exception implements Serializable {
@@ -362,8 +353,6 @@ class RPC_ServerException extends RPC_Exception implements Serializable {
 
 	public function serialize() {
 		return serialize(array(
-				$this->validator,
-				$this->arguments,
 				$this->getCode(),
 				$this->getMessage(),
 				$this->getTraceAsString(),
@@ -374,8 +363,6 @@ class RPC_ServerException extends RPC_Exception implements Serializable {
 
 	public function unserialize($serialized) {
 		list(
-			$this->validator,
-			$this->arguments,
 			$this->code,
 			$this->message,
 			$this->trace,
@@ -426,4 +413,3 @@ class RPC_RequestCallNotAllowed extends RPC_Exception {
 		parent::__construct('Requested call is not allowed: ' . print_r($call, true));
 	}
 }
-
